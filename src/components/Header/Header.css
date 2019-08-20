@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  padding: 1.25rem 1.5rem;
+  background-color: hsl(0, 100%, 100%);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px hsla(var(--hue), var(--saturation), 20%, .15);
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  color: hsl(var(--hue), var(--saturation), 50%);
+}
+
+header p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: hsl(var(--hue), var(--saturation), 75%);
+}
+
+.btn {
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .3rem;
+  padding: .75rem 1.25rem;
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  color: hsl(var(--hue), var(--saturation), var(--lightness-ops));
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.btn:hover {
+  box-shadow: 0px 5px 15px hsla(var(--hue), var(--saturation), 50%, .25);
+  transform: translateY(-.125rem)
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-opposite {
+  color: hsl(var(--hue), var(--saturation), var(--lightness));
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness-ops));
+}

@@ -1,0 +1,27 @@
+:root {
+  --hue: 0;
+  --saturation: 0%;
+  --lightness: 0%;
+  --lightness-ops: 0%;
+  --header-height: 0px;
+}
+
+html {
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
