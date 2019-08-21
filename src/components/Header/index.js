@@ -7,7 +7,7 @@ function Header(props) {
   const lts = `${props.lightness}%`;
   return (
     <header className="site-header">
-      <h1>Iridescent</h1>
+      <h2>iridescent</h2>
       <button className="btn btn-hsl">{`hsl(${hue}, ${sat}, ${lts})`}</button>
       <p>Find your color.</p>
     </header>
