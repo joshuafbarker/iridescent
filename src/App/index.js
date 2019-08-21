@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/'
+import { HSLToRGB, HSLToHex } from '../utils/conversion';
 
 const docStyle = document.documentElement.style;
 
@@ -49,7 +50,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header hue={this.state.hue} saturation={this.state.saturation} lightness={this.state.lightness} />
+        <Header
+          hslVal={`hsl(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%)`}
+          rgbVal={HSLToRGB(this.state.hue, this.state.saturation, this.state.lightness)}
+          hexVal={HSLToHex(this.state.hue, this.state.saturation, this.state.lightness)}
+        />
         <main>
           <button className="btn btn-opposite" onClick={this.newColor}>New Color</button>
         </main>
