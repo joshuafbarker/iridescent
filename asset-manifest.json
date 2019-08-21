@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/iridescent/static/css/main.0b14d8ee.chunk.css",
-    "main.js": "/iridescent/static/js/main.072f2a40.chunk.js",
-    "main.js.map": "/iridescent/static/js/main.072f2a40.chunk.js.map",
+    "main.js": "/iridescent/static/js/main.d64cb9e8.chunk.js",
+    "main.js.map": "/iridescent/static/js/main.d64cb9e8.chunk.js.map",
     "runtime~main.js": "/iridescent/static/js/runtime~main.3650ba7f.js",
     "runtime~main.js.map": "/iridescent/static/js/runtime~main.3650ba7f.js.map",
     "static/js/2.84e5c014.chunk.js": "/iridescent/static/js/2.84e5c014.chunk.js",
     "static/js/2.84e5c014.chunk.js.map": "/iridescent/static/js/2.84e5c014.chunk.js.map",
     "index.html": "/iridescent/index.html",
-    "precache-manifest.cff8ac22ba5fd9619c12a8c5b57df13f.js": "/iridescent/precache-manifest.cff8ac22ba5fd9619c12a8c5b57df13f.js",
+    "precache-manifest.0ea2199fe7049d73de168a376b1f3394.js": "/iridescent/precache-manifest.0ea2199fe7049d73de168a376b1f3394.js",
     "service-worker.js": "/iridescent/service-worker.js",
     "static/css/main.0b14d8ee.chunk.css.map": "/iridescent/static/css/main.0b14d8ee.chunk.css.map"
   }
