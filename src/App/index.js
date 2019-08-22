@@ -39,7 +39,7 @@ class App extends React.Component {
   componentDidMount() {
     const headerHeight = document.querySelector('.site-header').clientHeight;
     docStyle.setProperty('--header-height', `${headerHeight}px`);
-
+    console.log(headerHeight);
     this.setDocVars();
   }
 
