@@ -6,6 +6,7 @@ class Header extends React.Component {
   componentDidMount() {
     const cb = new Clipboard('.btn');
     const success = document.querySelector('.success');
+
     cb.on('success', (e) => {
       success.classList.add('open');
 
@@ -25,9 +26,6 @@ class Header extends React.Component {
         <button className="btn btn-rgb" data-clipboard-text={this.props.rgbVal}>{this.props.rgbVal}</button>
         <button className="btn btn-hex" data-clipboard-text={this.props.hexVal}>{this.props.hexVal}</button>
         <p>Find your color.</p>
-        <div className="success">
-          <span>Copied!</span>
-        </div>
       </header>
     )
   }

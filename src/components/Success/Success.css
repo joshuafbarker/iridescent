@@ -1,0 +1,22 @@
+.success {
+  position: absolute;
+  height: 2.5rem;
+  width: 6rem;
+  top: 0;
+  left: 50%;
+  margin-left: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 .5rem .5rem; 
+  color: hsl(var(--hue), var(--saturation), var(--lightness));
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness-ops));
+  font-weight: 600;
+  transform: translateY(-2.5rem);
+  transition: transform .3s ease;
+  z-index: 1;
+}
+
+.success.open {
+  transform: translateY(0);
+}

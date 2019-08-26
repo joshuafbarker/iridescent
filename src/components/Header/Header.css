@@ -5,7 +5,11 @@ header {
   background-color: hsl(0, 100%, 100%);
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 header h2 {
@@ -19,29 +23,6 @@ header p {
   font-weight: 500;
   font-size: 1.25rem;
   color: hsl(var(--hue), var(--saturation), 75%);
-}
-
-.success {
-  position: absolute;
-  height: 2.5rem;
-  width: 6rem;
-  bottom: -2.5rem;
-  left: 50%;
-  margin-left: -3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 0 .5rem .5rem; 
-  color: hsl(var(--hue), var(--saturation), var(--lightness));
-  background-color: white;
-  font-weight: 600;
-  transform: translateY(-2.5rem);
-  transition: transform .3s ease;
-  z-index: -1;
-}
-
-.success.open {
-  transform: translateY(0);
 }
 
 .btn {

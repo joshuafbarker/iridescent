@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../components/Header/'
+import Header from '../components/Header/';
+import Success from '../components/Success/';
 import { HSLToRGB, HSLToHex } from '../utils/conversion';
 
 const docStyle = document.documentElement.style;
@@ -39,7 +40,6 @@ class App extends React.Component {
   componentDidMount() {
     const headerHeight = document.querySelector('.site-header').clientHeight;
     docStyle.setProperty('--header-height', `${headerHeight}px`);
-    console.log(headerHeight);
     this.setDocVars();
   }
 
@@ -56,6 +56,7 @@ class App extends React.Component {
           hexVal={HSLToHex(this.state.hue, this.state.saturation, this.state.lightness)}
         />
         <main>
+          <Success />
           <button className="btn btn-opposite" onClick={this.newColor}>New Color</button>
         </main>
       </div>
